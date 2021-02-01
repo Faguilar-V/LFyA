@@ -19,6 +19,14 @@
 # Author: Fernando Rodrigo Aguilar Javier
 # Author email: faguilar@comunidad.unam.mx
 # Detalles del codigo
+# La primera l ́ınea contiene el alfabeto, separando cada s ́ımbolo por un espacio.
+# La segunda l ́ınea contiene el conjunto de estados, separando cada estado por un espacio.
+# La tercera l ́ınea contiene el estado inicial.
+# La cuarta l ́ınea el conjunto de estados finales, separados por un espacio.
+# Las siguientes n l ́ıneas, donde n es el n ́umero de estados, contienen las filas de la tabla de transiciones. Se usar ́a la letra V ,
+# para indicar que el aut ́omata no se mueve a ning ́un estado.
+# La siguiente l ́ınea contiene el n ́umero de palabras m que ser ́anprocesadas por el aut ́omata. Finalmente, las  ́ultimas m l ́ıneas
+# contienen las palabras a procesar.
 
 def evaluacion(estados):
     for estado in estados:
