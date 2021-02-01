@@ -25,7 +25,7 @@ indique si la palabra w es o no parte del lenguaje del aut ́omata.
 → ∗q0 q1 q1
 q1 q0 q0
 
-Considere el aut ́omata de la Tabla 1, la entrada al programa ser ́ıa la siguiente:
+Considere el automata de arriba, la entrada al programa sera la siguiente:
 0 1
 q0 q1
 q0
