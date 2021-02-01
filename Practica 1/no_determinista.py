@@ -79,14 +79,17 @@ def automata(palabra):
 
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
+    # Inputs
     alfabeto = [i for i in input().split()]
     estados = [i for i in input().split()]
     estado_inicial = [i for i in input().split()]
     estados_fnales = [i for i in input().split()]
+    ##########################################################
     transiciones = []
     for i in range(len(estados)):
         transiciones.append([i for i in input().split(', ')])
+    ##########################################################
     num_palabras = int(input())
     for i in range(num_palabras):
         palabra = input()

@@ -51,7 +51,7 @@ def automata(palabra):
     return(evaluacion(estado_actual))
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     # Inputs
     alfabeto = [i for i in input().split()] # Elementos de alfabeto
     estados = [i for i in input().split()] # Estados que pertenecen al A
