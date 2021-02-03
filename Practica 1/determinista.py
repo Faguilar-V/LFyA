@@ -37,6 +37,7 @@ def evaluacion(estado):
 def automata(palabra):
     estado_actual = estado_inicial
     palabra = [i for i in palabra]
+    
     for i in range(len(palabra)):
         try:
             pos_alf = alfabeto.index(palabra[i]) # posición del simbolo en el alfabeto
@@ -45,8 +46,12 @@ def automata(palabra):
             print("WARNING: Un elemento de tu palabra no se encuentra en el alfabeto \n")
             estado_actual = "Se murio la linea de ejecucion\n"
             break
-        
-        estado_actual = transiciones[pos_est][pos_alf] # actualizar estado actual
+        # actualizar estado actual        
+        change = transiciones[pos_est][pos_alf]
+        if change == 'V':
+            estado_actual = estado_actual
+        else:
+            estado_actual = transiciones[pos_est][pos_alf]
         
     return(evaluacion(estado_actual))
 
